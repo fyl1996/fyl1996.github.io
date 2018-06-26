@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>gonghao</title>
+<link rel="stylesheet" href="layout.css" type="text/css" media="screen" />
+</head>
+<script>
+ <!--  add -->
+	function addLoadEvent(func)
+		{	
+			var oldonload = window.omload;
+			if(typeof window.onload != 'function')
+			{
+				window.onload = func;
+			}
+			else
+			{
+				window.onload = function()
+				{
+					oldonload();
+					func();
+				}
+			}
+		}
+
+
+</script>
+<body>
+<ul  id="imagegallery">
+	<li>
+ 		<a href="img4/1.jpg"  title="NO.1"  onclick="return showPic(this)?false:true;"> 
+			Yi	
+		</a>
+	</li>
+
+	<li><a href="img4/2.jpg"  title="NO.2"  onclick="return showPic(this)?false:true;"> Er	</a></li>
+	<li><a href="img4/3.jpg"  title="NO.3"  onclick="return showPic(this)?false:true;">San </a></li>
+	<li><a href="img4/4.jpg"  title="NO.4"  onclick="return showPic(this)?false:true;"> Si</a></li>
+</ul>
+
+<div id="zwfwz">
+
+	<p id="des" >  this a  image description </p>
+	<img id="zwf" src="5.gif" alt="my zhanwiefu"/>	
+
+</div>
+    
+<script type="text/javascript" src="showPic.js" ></script>
+</body>
+</html>
